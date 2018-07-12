@@ -36,7 +36,7 @@ The purpose of this project was to compare two approaches to deep learning based
   <source src="bezierAndInfiniteTerrain.mp4" type="video/mp4">
  </video> 
 
-<em>Project in collaboration with Marc Jolles and Jonathan Scanzi.<br>
+<em><br>Project in collaboration with Marc Jolles and Jonathan Scanzi.<br>
 The purpose of this project was to construct a 3D scene in realtime, under specific scenery constraints, using OpenGL and C++, ie a rasterizer pipeline. The terrain is procedurally generated (using a variant of Perlin noise), along with special care taken such that said noise is continuous, so as to avoid sudden terrain bumps which would be highly unrealistic. Water was modelled using normal map distortions instead of actual geometry perturbation. Reflection on water is rendered using smart tricks of the framebuffer in the OpenGL pipeline. One can navigate the scene using the keyboard, much like an FPS. The preview uses Bezier curves to move on predetermined paths in a smooth fashion. <br>
 God-rays were also added, using an approach suggested in GPU Gems 3, which is basically a ray-tracing approach using far away objects as occluders for the various sources of light in the scene (here specifically, the sun). To speed up computations, only object's contours are considered to create the god-rays, which provide a significant speed-up, as said contours can be downscale, but also discards a lot of potential complexity in the light behaviour. L-systems were also studied, for the purpose of building procedural vegetation.</em></p>
 </blockquote>
