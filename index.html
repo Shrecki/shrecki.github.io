@@ -16,35 +16,35 @@ NATIONALITY: FRANCE</em></p>
 <p>I’m a master student in Computer Sciences, studying at EPFL. I have a strong interest in computer graphics and more recently in physically-based rendering and raytracing in general.<br>
 I also have some notions of biology and physics, following a minor in biocomputing, and am quite interested in all methods regarding light-organism interactions.</p>
 <h1 id="project-experience">Project Experience</h1>
-<p><strong>Spring 2016:</strong></p>
+<p><strong>Spring 2018:</strong></p>
 <blockquote>
-<p><strong>Introduction to visual Computing</strong><br>
-[ Image ]<br>
-<em>Project in collaboration with Marc Jolles and Thomas Garcia.<br>
-The goal was to design a game using augmented reality: the user holds a board which can be tilted, so as to move a virtual ball onto the board. The goal is to hit as many objects as possible on the board with the ball to accumulate points!<br>
-This project was the occasion to study a simple game-building, study intersections, modelization of simple objects and their bounding boxes from a mathematical perspective, as well as create a simple physical engine, along with some gamification notions, such as scores, visualization and human perception for the purpose of tangible rewards in the context of a game.</em></p>
+<p><strong>Nori raytracer</strong><br>
+ <img src="env_light_grace-new.png" alt="A sample of what Nori can do" height="400" width="500"> <br>
+<em>Project in the context of the Advanced Computer Graphics course.
+The Nori raytracer is an educational raytracer of which the skeleton was provided. The aim of the project was to furnish said skeleton with additional functionality, to create a ray-tracer that would rely on Monte Carlo sampling of light. The basic framework implemented during the semester comprised warping of random samples, BSDFs of plastic, glass, several integrator schemes and multiple-importance sampling. On top, some additional features were added such as textures, displacement maps and image-based lighting were also implemented. The image-based lighting uses a hierarchical scheme to warp random samples efficiently in the scene.</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Super-resolution enhancement</strong><br>
+ <img src="super_resolution.png" alt="Super resolution comparison" height="400" width="900"> <br><br>
+<em>Project in collaboration with Aimee Montero and Arsalan Syed in the context of the Computational photography course.<br>
+The purpose of this project was to compare two approaches to deep learning based super resolution, one based on wavelet transforms and the other on the spatial domain, to see if by using wavelets, the network could actually learn more information to perform super resolution, and if so try to explain why. Super-resolution has many applications, in biomedical fields, but also simply to improve resolution of images in and on itself. It 		     interestingly relies on aliasing to recover partial information and obtain better resolution. The architecture used was a ten-layers deep. The interpolation used as raw input for the reconstruction contained a lot of noise; interestingly still, wavelets performed better than spatial nets in all cases, although by a rather small margin. </em></p>
 </blockquote>
 <p><strong>Spring 2017:</strong></p>
 <blockquote>
 <p><strong>Introduction to Computer Graphics</strong><br>
-[ Image ]<br>
+ <img src="preview_opti.gif" alt="Final scene" height="400" width="500"> <br>
 <em>Project in collaboration with Marc Jolles and Jonathan Scanzi.<br>
-The purpose of this project was to construct a 3D scene in realtime, under specific scenery constraints, such as presence of water, procedural terrain (generated using a variant of Perlin noise), skybox…<br>
-The scene was built in OpenGL and C++, around a rasterization pipeline. Added features were most notably fast god-rays, implemented using an approach suggested in GPU Gems 3, which is basically a ray-tracing approach using objects as occluders for different sources of light. To speed up computations, only object contours are considered to create the god-rays, which provide a significant speed-up but also discards a lot of potential complexity in the light behaviour. L-systems were also studied, for the purpose of building procedural vegetation.</em></p>
+The purpose of this project was to construct a 3D scene in realtime, under specific scenery constraints, using OpenGL and C++, ie a rasterizer pipeline. The terrain is procedurally generated (using a variant of Perlin noise), along with special care taken such that said noise is continuous, so as to avoid sudden terrain bumps which would be highly unrealistic. Water was modelled using normal map distortions instead of actual geometry perturbation. Reflection on water is rendered using smart tricks of the framebuffer in the OpenGL pipeline. One can navigate the scene using the keyboard, much like an FPS. The preview uses Bezier curves to move on predetermined paths in a smooth fashion. <br>
+God-rays were also added, using an approach suggested in GPU Gems 3, which is basically a ray-tracing approach using far away objects as occluders for the various sources of light in the scene (here specifically, the sun). To speed up computations, only object's contours are considered to create the god-rays, which provide a significant speed-up, as said contours can be downscale, but also discards a lot of potential complexity in the light behaviour. L-systems were also studied, for the purpose of building procedural vegetation.</em></p>
 </blockquote>
-<p><strong>Spring 2018:</strong></p>
+<p><strong>Spring 2016:</strong></p>
 <blockquote>
-<p><strong>Nori raytracer</strong><br>
-[ Image ]<br>
-<em>Project in the context of the Advanced Computer Graphics course.</em></p>
-</blockquote>
-<blockquote>
-<p><strong>Super-resolution enhancement</strong><br>
-[ Image ]<br>
-<em>Project in collaboration with Aimee Montero and Arsalan Syed in the context of the Computational photography course.<br>
-The purpose of this project was to compare two approaches to deep learning based super resolution, one based on wavelet 		     transforms and the other on the spatial domain.  Super-resolution has many applications, in biomedical fields, but also simply to improve resolution of images in and on itself. It 		     interestingly relies on aliasing to recover partial information and obtain better resolution.</em></p>
+<p><strong>Introduction to visual Computing</strong><br>
+ <img src="visu_comp.png" alt="Moving board in augmented reality" height="400" width="500"> <br>
+<em>Project in collaboration with Marc Jolles and Thomas Garcia.<br>
+The goal was to design a game using augmented reality: the user holds a board which can be tilted, so as to move a virtual ball onto the board. The goal is to hit as many objects as possible on the board with the ball to accumulate points!<br>
+This project was the occasion to study a simple game-building, study intersections, modelization of simple objects and their bounding boxes from a mathematical perspective, as well as create a simple physical engine, along with some gamification notions, such as scores, visualization and human perception for the purpose of tangible rewards in the context of a game. Basics of real-time image processing, such as Hough transform and filtering were also applied in this project, to detect a real board from a webcam.</em></p>
 </blockquote>
 </div>
 </body>
-
 </html>
